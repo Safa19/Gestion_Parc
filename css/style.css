@@ -1,0 +1,257 @@
+* {
+box-sizing : border-box;
+margin : 0;
+padding : 0;
+}
+html {
+scroll-behavior : smooth;
+height : 100%;
+}
+body {
+display : flex;
+flex-direction : column;
+font-family : Montserrat;
+min-height : 100%;
+
+}
+h1 {
+color : white;
+}
+nav {
+display : flex;
+justify-content : end;
+position : sticky;
+top : 0;
+background-color : #141414;
+padding : 10px 0;
+}
+div.current, div.entete
+{
+display : flex;
+justify-content : space-between;
+padding: 10px;
+
+}
+
+div.entete
+{
+	background-color : #141414;
+	color : #fff;
+	font-size:20px;
+	margin:10px;
+}
+div.mytable
+{
+margin: 0;
+padding: 10px;
+}
+nav .buttons {
+margin-top : 20px;
+}
+nav .buttons a {
+padding : 13px 20px;
+color : #8f8f8f;
+border : none;
+font-size : 15px;
+cursor : pointer;
+outline : none;
+
+text-decoration : none;
+}
+nav .buttons a.login {
+background-color : inherit;
+}
+nav .buttons a.register {
+background-color : #f54266;
+color : #fff;
+}
+footer {
+margin-top : auto;
+background-color : #1a1a1a;
+padding : 25px 100px;
+color : #828282;
+}
+.row {
+display : flex;
+}
+.cols-25 {
+flex : 20%;
+}
+.cols-75 {
+flex : 80%;
+}
+form.myfirstform {
+width : 30%;
+margin : 30px auto;
+}
+
+form.myfirstform input {
+width : 100%;
+padding : 13px 0;
+border : none;
+outline : none;
+margin-top : 6px;
+margin-bottom : 16px;
+background : #141414;
+resize : none;
+border-bottom : 1px solid #f54266;
+color : white;
+}
+form.myfirstform ::placeholder
+{
+	color:white;
+}
+form.form-out{
+	width:30%; 
+	margin-left:10px; 
+	border-left:3px solid #f54266 ;
+	padding:10px;
+}
+form.form-out input,select,textarea
+{
+width : 100%;
+padding : 13px 0;
+border : none;
+outline : none;
+margin-top : 6px;
+margin-bottom : 16px;
+resize : none;
+border-bottom : 1px solid #f54266;
+}
+form.form-out hr
+{
+border :  solid 2px;
+margin : 10px 0;
+}
+
+
+form label {
+font-weight : bold;
+}
+hr {
+border : white solid 2px;
+margin : 10px 0;
+}
+button.btn{
+padding : 13px 20px;
+color : #fff;
+border : none;
+font-size : 15px;
+cursor : pointer;
+outline : none;
+background-color : #f54266;
+}
+div.alert {
+padding : 13px 20px;
+background-color : #f54266;
+color : #fff;
+margin-bottom : 10px;
+}
+.cols-25 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  width:100%;
+  background-color : #141414;
+  min-height:100vh;
+}
+
+li a {
+padding : 13px 20px;
+color : #8f8f8f;
+border : none;
+font-size : 16px;
+cursor : pointer;
+outline : none;
+text-decoration : none;
+display :block;
+
+}
+li a.active {
+color : #f54266;
+}
+li a:hover:not(.active) {
+color : #f54266;
+}
+li:nth-child(1) a{
+border-bottom : 3px solid #f54266;
+color : white;
+}
+li:last-child a{
+background-color : #f54266;
+color : white;
+}
+li:last-child a:hover{
+color : white;
+}
+tr:first-child {
+background-color : #141414;
+opacity:0.8;
+font-variant : small-caps;
+color : white;
+}
+table {
+border : 2px solid;
+border-collapse : collapse;
+width : 100%;
+margin-bottom:10px;
+}
+th, td {
+padding : 8px;
+text-align : left;
+
+}
+
+
+.text-right {
+text-align : right;
+}
+div.cols-75 div.current a {
+padding : 13px 20px;
+border : none;
+font-size : 15px;
+cursor : pointer;
+outline : none;
+text-decoration : none;
+display :block;
+background-color : #f54266;
+color : #fff;
+}
+
+i {
+color : #f54266;
+}
+.search {
+width : 100%;
+display : flex;
+justify-content : end;
+
+
+}
+.search > form input[type="text"] {
+width : 150px;
+padding : 13px 0;
+border : none;
+outline : none;
+resize : none;
+border-bottom : 1px solid black;
+
+}
+.search > form .btn {
+background-color : #f54266;
+padding : 13px 20px;
+color : #fff;
+border : none;
+font-size : 15px;
+cursor : pointer;
+outline : none;
+text-decoration : none;
+}
+.pagination
+{
+
+color : #f54266;
+font-size : 17px;
+cursor : pointer;
+text-decoration : none;
+}
